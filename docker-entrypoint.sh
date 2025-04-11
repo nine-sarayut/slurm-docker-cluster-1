@@ -3,7 +3,7 @@ set -e
 
 sed -i 's/cons_res/cons_tres/g' /etc/slurm/slurm.conf 
 sed -i 's/#SlurmdUser=root/SlurmdUser=slurm/g' /etc/slurm/slurm.conf
-# wget -O /etc/slurm/cgroup.conf https://raw.githubusercontent.com/vivian-hafener/slurm-docker-cluster/refs/heads/main/cgroup.conf
+wget -O /etc/slurm/cgroup.conf https://raw.githubusercontent.com/nine-sarayut/slurm-docker-cluster-1/refs/heads/main/cgroup.conf
 
 if [ "$1" = "slurmdbd" ]
 then
